@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import HighlightsSection from "@/components/HighlightsSection";
 import SkillsSection from "@/components/SkillsSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import ExperienceSection from "@/components/ExperienceSection";
@@ -10,6 +11,7 @@ const Index = () => {
     <main className="relative overflow-hidden">
       <HeroSection />
       <AboutSection />
+      <HighlightsSection />
       <SkillsSection />
       <CertificationsSection />
       <ExperienceSection />
