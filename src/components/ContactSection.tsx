@@ -1,5 +1,4 @@
-import { Mail, Terminal } from "lucide-react";
-import { Button } from "./ui/button";
+import { Mail, Terminal, Linkedin, Github } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -24,6 +23,26 @@ const ContactSection = () => {
               className="text-primary font-semibold hover:text-accent transition-colors"
             >
               vipultomar47@gmail.com
+            </a>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex items-center justify-center gap-4 mb-8">
+            <a
+              href="https://www.linkedin.com/in/vipul-kumar-7a22aa296"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group cyber-glow rounded-lg p-4 bg-card/50 backdrop-blur-sm border border-primary/30 hover:border-accent/50 transition-all duration-300 hover:scale-110"
+            >
+              <Linkedin className="w-6 h-6 text-primary group-hover:text-accent transition-colors" />
+            </a>
+            <a
+              href="https://github.com/Vipul1231-ne"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group cyber-glow rounded-lg p-4 bg-card/50 backdrop-blur-sm border border-primary/30 hover:border-accent/50 transition-all duration-300 hover:scale-110"
+            >
+              <Github className="w-6 h-6 text-primary group-hover:text-accent transition-colors" />
             </a>
           </div>
 
