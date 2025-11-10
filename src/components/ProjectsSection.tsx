@@ -9,7 +9,10 @@ const ProjectsSection = () => {
       role: "Team Co-Lead",
       period: "Aug 2024 – Dec 2024",
       description: [
-        "Designed and executed Evil Twin attacks across Kali Linux, Windows, and Flipper Zero platforms, configuring rogue access points, ARP cache poisoning, and custom wireless drivers to enable monitor mode for live traffic interception."
+        "Executed Evil Twin attacks on Kali Linux, Windows, and Flipper Zero by configuring rogue access points, ARP poisoning, and wireless drivers for traffic interception",
+        "Built fake captive portal mimicking CSULB SSO to capture credentials, redirecting traffic via iptables and analyzing packets with Ettercap/Wireshark",
+        "Evaluated SSL/TLS interception limitations and documented encryption's role in preventing credential theft",
+        "Authored risk mitigation report covering VPN adoption, HTTPS/SSH enforcement, and static ARP; presented findings at Cybersecurity Club showcase"
       ],
       technologies: ["Kali Linux", "Flipper Zero", "Wireshark", "Ettercap", "HTML/CSS/JS", "iptables"]
     }
