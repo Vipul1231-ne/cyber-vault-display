@@ -25,7 +25,7 @@ const HighlightsSection = () => {
   ];
 
   return (
-    <section id="highlights" className="py-20 px-4 relative">
+    <section id="highlights" className="py-20 px-4 relative bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center cyber-glow-text">
           <span className="text-primary">&gt;</span> Core Expertise

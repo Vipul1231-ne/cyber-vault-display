@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import HighlightsSection from "@/components/HighlightsSection";
@@ -10,6 +11,7 @@ import ContactSection from "@/components/ContactSection";
 const Index = () => {
   return (
     <main className="relative overflow-hidden">
+      <Navigation />
       <HeroSection />
       <AboutSection />
       <HighlightsSection />
