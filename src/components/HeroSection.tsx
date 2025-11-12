@@ -1,4 +1,5 @@
 import { Shield, Terminal, Lock } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const HeroSection = () => {
   return (
@@ -21,8 +22,12 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 animate-fade-in-up">
         <div className="inline-block mb-6">
-          <div className="cyber-glow rounded-full p-4 bg-card/50 backdrop-blur-sm border border-primary/30">
-            <Shield className="w-12 h-12 text-primary animate-glow-pulse" />
+          <div className="cyber-glow rounded-full p-1 bg-card/50 backdrop-blur-sm border-2 border-primary/50">
+            <img 
+              src={profilePhoto} 
+              alt="Vipul Kumar - Cybersecurity Specialist" 
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover"
+            />
           </div>
         </div>
         
