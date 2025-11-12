@@ -1,5 +1,4 @@
-import { Shield, Terminal, Lock } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo.png";
+import { Shield, Terminal, Lock, Code } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -22,12 +21,31 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 animate-fade-in-up">
         <div className="inline-block mb-6">
-          <div className="cyber-glow rounded-full p-1 bg-card/50 backdrop-blur-sm border-2 border-primary/50">
-            <img 
-              src={profilePhoto} 
-              alt="Vipul Kumar - Cybersecurity Specialist" 
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover"
-            />
+          <div className="relative w-32 h-32 md:w-40 md:h-40">
+            {/* Hexagonal cyber frame */}
+            <div className="absolute inset-0 cyber-glow">
+              <div className="relative w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 backdrop-blur-sm" 
+                   style={{ clipPath: "polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)" }}>
+                {/* Inner hexagon */}
+                <div className="absolute inset-2 bg-card/80 backdrop-blur-sm border-2 border-primary/50"
+                     style={{ clipPath: "polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)" }}>
+                  {/* Icon grid */}
+                  <div className="w-full h-full flex items-center justify-center">
+                    <div className="grid grid-cols-2 gap-2 p-4">
+                      <Shield className="w-6 h-6 md:w-8 md:h-8 text-primary animate-glow-pulse" style={{ animationDelay: "0s" }} />
+                      <Terminal className="w-6 h-6 md:w-8 md:h-8 text-accent animate-glow-pulse" style={{ animationDelay: "0.5s" }} />
+                      <Lock className="w-6 h-6 md:w-8 md:h-8 text-accent animate-glow-pulse" style={{ animationDelay: "1s" }} />
+                      <Code className="w-6 h-6 md:w-8 md:h-8 text-primary animate-glow-pulse" style={{ animationDelay: "1.5s" }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Corner accents */}
+            <div className="absolute -top-1 -left-1 w-3 h-3 border-t-2 border-l-2 border-primary" />
+            <div className="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-primary" />
+            <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-primary" />
+            <div className="absolute -bottom-1 -right-1 w-3 h-3 border-b-2 border-r-2 border-primary" />
           </div>
         </div>
         
